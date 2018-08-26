@@ -1,0 +1,4 @@
+spring:
+  application:
+    name: ea-api-aws-preferences
+debug: false
