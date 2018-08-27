@@ -25,7 +25,7 @@ import java.util.concurrent.TimeUnit
  * Super snippet collection in Kotlin for AWS async operations on S3, DynamoDB etc...
  */
 @DisplayName("Playing with DynamoDB and Async SDK")
-class AWSAsyncUnitTesting() {
+class AWSAsyncUnitTesting {
 
     val logger: Logger = LoggerFactory.getLogger(AWSAsyncUnitTesting::class.java)
     val BUCKET = "ea-sftp-01"
@@ -33,7 +33,7 @@ class AWSAsyncUnitTesting() {
 
     // Global configuration for httpClient using netty
     var httpClient = NettyNioAsyncHttpClient.builder()
-            .connectionAcquisitionTimeout(Duration.ofSeconds(10))
+            .connectionAcquisitionTimeout(Duration.ofSeconds(5))
             .connectionTimeout(Duration.ofMillis(750))
             .build()
 
@@ -77,7 +77,7 @@ class AWSAsyncUnitTesting() {
                 .build())
                 .get(5, TimeUnit.SECONDS) // This is a blocking wait !
                 .tableNames()
-                .forEach { logger.info("$it".toUpperCase()) }
+                .forEach { logger.info(it.toUpperCase()) }
     }
 
     /**
