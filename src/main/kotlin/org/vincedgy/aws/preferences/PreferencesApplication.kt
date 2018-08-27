@@ -1,4 +1,4 @@
-package com.ea.api.preferences
+package org.vincedgy.aws.preferences
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication

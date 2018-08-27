@@ -1,4 +1,4 @@
 spring:
   application:
-    name: ea-api-aws-preferences
+    name: vincedgy-aws-preferences
 debug: false

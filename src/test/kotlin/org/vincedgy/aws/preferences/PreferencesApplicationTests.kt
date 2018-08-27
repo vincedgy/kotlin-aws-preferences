@@ -1,5 +1,4 @@
-package com.ea.api.preferences
-
+package org.vincedgy.aws.preferences
 
 import org.junit.jupiter.api.DisplayName
 import org.junit.jupiter.api.Test
@@ -22,7 +21,9 @@ import java.time.Duration
 import java.time.LocalDateTime
 import java.util.concurrent.TimeUnit
 
-
+/**
+ * Super snippet collection in Kotlin for AWS async operations on S3, DynamoDB etc...
+ */
 @DisplayName("Playing with DynamoDB and Async SDK")
 class AWSAsyncUnitTesting() {
 
